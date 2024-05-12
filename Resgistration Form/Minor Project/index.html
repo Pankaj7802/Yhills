@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechVolution 2024 Registration Form</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center py-4">TechVolution 2024 Registration Form</h1>
+    <form id="registrationForm">
+      <!-- Personal Information -->
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+        <div class="invalid-feedback">Please enter your name.</div>
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" class="form-control" id="dob" name="dob" required>
+        <div class="invalid-feedback">Please enter your date of birth.</div>
+      </div>
+      <div class="form-group">
+        <label>Gender:</label>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="male" name="gender" value="Male" required>
+          <label class="form-check-label" for="male">Male</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="female" name="gender" value="Female">
+          <label class="form-check-label" for="female">Female</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="nonbinary" name="gender" value="Non-binary">
+          <label class="form-check-label" for="nonbinary">Non-binary</label>
+        </div>
+        <div class="invalid-feedback">Please select your gender.</div>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+        <div class="invalid-feedback">Please enter a valid email address.</div>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="text" class="form-control" id="phone" name="phone" required>
+        <div class="invalid-feedback">Please enter a valid phone number.</div>
+      </div>
+      <div class="form-group">
+        <label for="streetAddress">Street Address:</label>
+        <input type="text" class="form-control" id="streetAddress" name="streetAddress" required>
+        <div class="invalid-feedback">Please enter your street address.</div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="city">City:</label>
+          <input type="text" class="form-control" id="city" name="city" required>
+          <div class="invalid-feedback">Please enter your city.</div>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="state">State:</label>
+          <select class="form-control" id="state" name="state" required>
+            <option value="">Choose...</option>
+            <!-- Add options for states here -->
+          </select>
+          <div class="invalid-feedback">Please select your state.</div>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="zip">Zip Code:</label>
+          <input type="text" class="form-control" id="zip" name="zip" required>
+          <div class="invalid-feedback">Please enter your zip code.</div>
+        </div>
+      </div>
+
+      <!-- Additional Information -->
+      <div class="form-group">
+        <label for="eventPreferences">Event Preferences:</label>
+        <select class="form-control" id="eventPreferences" name="eventPreferences">
+          <option value="Workshops">Workshops</option>
+          <option value="Keynote Speeches">Keynote Speeches</option>
+          <option value="Interactive Sessions">Interactive Sessions</option>
+          <!-- Add more options here -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="dietaryRestrictions">Dietary Restrictions:</label>
+        <textarea class="form-control" id="dietaryRestrictions" name="dietaryRestrictions" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="tshirtSize">T-shirt Size:</label>
+        <select class="form-control" id="tshirtSize" name="tshirtSize">
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <!-- Add more options here -->
+        </select>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary form-control">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
